@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_bg"
+    android:id="@+id/layBody"
+    >
+    <include layout="@layout/top_title" android:id="@+id/includeTitle"/>
+    <include layout="@layout/bottom_box" android:id="@+id/includeBottom"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/layMainBody"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/includeTitle"
+        >
+
+    </LinearLayout>
+</RelativeLayout>

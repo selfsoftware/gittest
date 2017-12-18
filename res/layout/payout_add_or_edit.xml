@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:id="@+id/payoutTableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:stretchColumns="0,1">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnPayoutSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ButtonDialogSave" />
+
+            <Button
+                android:id="@+id/btnPayoutCancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ButtonDialogCancel" />
+        </TableRow>
+    </TableLayout>
+
+    <ScrollView
+        android:id="@+id/payoutScrollViewPayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/payoutTableLayout"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivPayoutAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:src="@drawable/account_book_default_icon" />
+                <Button
+                    android:id="@+id/btnPayoutAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:padding="8dp"
+                    android:text="@string/PayoutAccountButtonText" />
+
+                <EditText
+                    android:id="@+id/etPayoutAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/ivPayoutAccount"
+                    android:layout_toEndOf="@id/ivPayoutAccount"
+                    android:layout_toStartOf="@id/btnPayoutAccount"
+                    android:layout_toLeftOf="@id/btnPayoutAccount"
+                    android:padding="8dp"
+                    android:focusable="false"
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivPayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:src="@drawable/payout_small_icon" />
+                <Button
+                    android:id="@+id/btnPayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:padding="8dp"
+                    android:text="@string/PayoutButtonText" />
+
+                <EditText
+                    android:id="@+id/etPayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/ivPayout"
+                    android:layout_toEndOf="@id/ivPayout"
+                    android:layout_toStartOf="@id/btnPayout"
+                    android:layout_toLeftOf="@id/btnPayout"
+                    android:hint="@string/PayoutEditTextHint"
+                    android:inputType="numberDecimal"
+                    android:maxLength="10"
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivPayoutCategory"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:padding="8dp"
+                    android:src="@drawable/category_icon" />
+                <Button
+                    android:id="@+id/btnPayoutCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:padding="8dp"
+                    android:text="@string/PayoutCategoryButtonText" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/etPayoutCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:completionThreshold="1"
+                    android:dropDownWidth="match_parent"
+                    android:layout_toRightOf="@id/ivPayoutCategory"
+                    android:layout_toStartOf="@id/btnPayoutCategory"
+                    android:layout_toEndOf="@id/ivPayoutCategory"
+                    android:layout_toLeftOf="@id/btnPayoutCategory"
+                    android:hint="@string/PayoutCategoryEditTextHint" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/btnPayoutDate"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/PayoutDateButtonText" />
+
+                <EditText
+                    android:layout_toStartOf="@id/btnPayoutDate"
+                    android:layout_toLeftOf="@id/btnPayoutDate"
+                    android:id="@+id/etPayoutDate"
+                    android:maxLines="1"
+                    android:focusable="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btnPayoutAccountFor"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/PayoutAccountFormButtonText"
+                    android:layout_alignParentRight="true" />
+
+                <EditText
+                    android:layout_toStartOf="@id/btnPayoutAccountFor"
+                    android:layout_toLeftOf="@id/btnPayoutAccountFor"
+                    android:id="@+id/etPayoutAccountFor"
+                    android:maxLines="1"
+                    android:focusable="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btnPayoutUser"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/PayoutUserButtonText" />
+
+                <EditText
+                    android:layout_toStartOf="@id/btnPayoutUser"
+                    android:id="@+id/etPayoutUser"
+                    android:maxLines="1"
+                    android:focusable="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/btnPayoutUser" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/etPayoutNote"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/PayoutNote"
+                    android:maxLength="301"
+                    android:gravity="fill_horizontal"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

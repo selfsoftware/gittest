@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="SlideMenuActivityMain">
+        <item>软件帮助</item>
+        <item>关于软件</item>
+        <item>建议反馈</item>
+        <item>软件更新</item>
+    </string-array>
+    <string-array name="SlideMenuUser">
+        <item>新建人员</item>
+    </string-array>
+    <string-array name="SlideMenuAccountBook">
+    <item>新建账本</item>
+    </string-array>
+    <string-array name="SlideMenuCategory">
+    <item>新建类别</item>
+    </string-array>
+    <string-array name="InitDefaultSQLiteUsers">
+        <item>张三</item>
+        <item>李四</item>
+    </string-array>
+    <string-array name="InitDefaultSQLiteAccountBooks">
+        <item>默认账本</item>
+    </string-array>
+    <string-array name="SQLiteDALClassName">
+        <item>SQLiteDALUser</item>
+        <item>SQLiteDALAccountBook</item>
+        <item>SQLiteDALCategory</item>
+    </string-array>
+    <string-array name="InitDefaultSQLiteCategorys">
+        <item>买菜</item>
+        <item>购物</item>
+        <item>交通</item>
+        <item>早餐</item>
+        <item>中餐</item>
+        <item>晚餐</item>
+        <item>通讯</item>
+        <item>房租</item>
+        <item>水电气网</item>
+        <item>其他</item>
+    </string-array>
+</resources>

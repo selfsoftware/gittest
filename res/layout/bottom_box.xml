@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_alignParentBottom="true"
+    >
+
+    <RelativeLayout
+        android:id="@+id/layBottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/bottom_box_bg">
+
+        <ImageView
+            android:id="@+id/iv_box1"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/iv_box1" />
+
+        <TextView
+            android:id="@+id/tv_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_box1"
+            android:padding="5dp"
+            android:text="@string/bottom_box_welcome"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/iv_box2"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/iv_box2" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layBottomListViewBox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layBottomBar">
+
+        <ListView
+            android:id="@+id/lv_slideList"
+            style="@style/StyleListView">
+
+        </ListView>
+    </LinearLayout>
+
+</RelativeLayout>

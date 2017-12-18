@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="black">#0a0909</color>
+    <color name="selectorStar">#badadf</color>
+    <color name="selectorEnd">#21c0c9</color>
+    <color name="selectorFocus">#d75d69</color>
+    <color name="selectorPress">#d60e3c</color>
+    <color name="transparent">#00000000</color>
+    <color name="listViewPress">#c9a737</color>
+    <color name="listViewSelect">#73dabf</color>
+    <color name="listViewFocus">#36342c</color>
+
+</resources>
