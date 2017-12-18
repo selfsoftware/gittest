@@ -20,16 +20,17 @@ import java.lang.reflect.Field;
  */
 
 public class ActivityBase extends Activity{
-
+    //对Activity封装,打开以及切换Activity
     protected void openActivity(Class<?> pCls){
         Intent _intent = new Intent() ;
         _intent.setClass(this,pCls) ;
         startActivity(_intent);
     }
+    //Toast提示方法的封装
     protected void showMsg(String pMsg){
         Toast.makeText(this,pMsg,Toast.LENGTH_SHORT).show();
     }
-
+    
     public LayoutInflater getLayoutInflater(){
         LayoutInflater _LayoutInflater = LayoutInflater.from(this) ;
         return _LayoutInflater ;
